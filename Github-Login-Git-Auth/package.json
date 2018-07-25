@@ -1,0 +1,51 @@
+{
+  "name": "node-express-4-passport-github",
+  "version": "0.0.1",
+  "description": "A Node.js app using Express 4 with passport-github oauth",
+  "keywords": [
+    "node",
+    "express",
+    "passport",
+    "passport-github",
+    "mongodb",
+    "mongoose"
+    "express-session"
+  ],
+  "author": "Wilfred Macaulay",
+  "homepage": "https://github.com/mockingloris/node-express-4-passport-github",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mockingloris/node-express-4-passport-github.git"
+  },
+  "engines": {
+    "node": "6.11.1"
+  },
+  "main": "gh-auth.js",
+  "scripts": {
+    "start": "node gh-auth.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "connect-flash": "~0.1.1",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "~1.0.0",
+    "csurf": "^1.9.0",
+    "express": "~4.0.0",
+    "express-handlebars": "^3.0.0",
+    "express-session": "~1.0.0",
+    "handlebars": "^4.0.6",
+    "moment": "^2.17.1",
+    "moment-timezone": "^0.5.11",
+    "mongoose": "~4.4",
+    "morgan": "~1.0.0",
+    "passport": "~0.1.17",
+    "passport-github2": "^0.1.11",
+    "q": "^1.5.0"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "license": "MIT"
+}

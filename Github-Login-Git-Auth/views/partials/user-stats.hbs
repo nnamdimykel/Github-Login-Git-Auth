@@ -1,0 +1,38 @@
+		<div class="col-xs-8 col-md-5 col-xs-offset-2 col-md-offset-3" id="info-panel">
+
+			<div class="well user_info">
+				<h3 class=""><span class="fa fa-user" id="user_info" style="color: rgba(47, 61, 88, 0.56);"></span> User Statistics</h3>
+			
+				{{# if user.id }}
+				<div>
+					<p><b>Bank Name:</b> {{ account.details.bank_name }}</p>
+
+					<p><b>Account Name:</b> {{ account.details.account_name }}</p>
+
+					<p><b>Account Number: </b> {{ account.details.account_number }}</p>
+
+					<p><b>Phone Number: </b> {{ account.details.phone_number }}</p>
+
+					<p><b>Email Address:</b> {{ account.details.account_email }}</p>
+
+					<p><b>Referral Point:</b> {{ account.user_info.referral_point }} | {{ account.user_info.referral_value }}</p>
+				</div>
+				{{ else }}
+				{{/if}}
+
+				<div class="" style="display: none;">
+					<span class="q-purple q-round"></span>
+					<span class="q-cyan q-round"></span>
+					<span class="q-darkGrey q-round"></span>
+				</div>
+
+			</div>
+			{{# unless account.user_info }}
+			{{else}}
+			<div class="alert alert-warning alert-dismissible" role="alert">
+		    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		    <strong>NOTE: </strong>Your user info will appear here once your registration have been processed. This may take a while.
+				Please be patient.
+		  </div>
+			{{/unless}}
+		</div>

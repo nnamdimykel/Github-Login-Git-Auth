@@ -1,0 +1,29 @@
+	  <div class="hero-body">
+	    <div class="container">
+	      <div class="columns is-mobile">
+
+
+	      <div class="column is-two-thirds-mobile is-one-third-tablet is-half-desktop">
+			<div class="card">
+			  <div class="card-image">
+			  </div>
+			  <div class="card-content">
+			    <div class="content">
+				<p><b>Account Name:</b> {{ user.github.name }}</p>
+
+				<p><b>Email:</b> {{ user.github.email }}</p>
+
+				<p><b>Repos:</b> {{ user.github.repos}}</p>
+				
+				{{# if user.github.id}}
+				<p><b>User Id:</b> {{ user.github.id }}</p>
+				{{/if}}
+			    <br>
+			      <small>{{user.created_at}}</small>
+			    </div>
+			  </div>
+			</div>
+	      </div>
+		  </div>
+	  	</div>
+	  </div>
